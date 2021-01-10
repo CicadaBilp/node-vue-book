@@ -2,7 +2,7 @@ const env = require("./env")
 
 let resurl
 let mp3FilePath
-if(enc === 'dev'){
+if(env === 'dev'){
   resurl = 'http://localhost:9001'
   mp3FilePath = 'C:/Users/Everg/Desktop/resource/mp3'
 }else if(env === 'prod'){
