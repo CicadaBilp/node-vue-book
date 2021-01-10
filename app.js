@@ -14,9 +14,9 @@ app.use(cors())
 //连接数据库的函数
 function connection() {
   return mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
+    host: consts.dbHost,
+    user: consts.dbUser,
+    password: consts.dbPwd,
     database: 'book'
   })
 }
@@ -247,5 +247,5 @@ app.get('/voice',(req,res) => {
 
 
 app.listen(3000, () => {
-  console.log('sueecss');
+  console.log('sueecss,端口3000');
 })
