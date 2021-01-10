@@ -20,7 +20,7 @@ var fs = require('fs')
 function keda(text) {
     //本次音频文件名,时间戳
     const fileName = new Date().getTime()
-    //音频文件保存在c盘下的nginx中MP3文件夹下
+    //音频文件保存在存放资源的nginx中MP3文件夹下
     const filePath = `${mp3FilePath}/${fileName}.mp3`
     //需要返回前端该音频的下载路径,就是nginx服务器上
     const downloadUrl = `${resurl}/mp3/${fileName}.mp3`
