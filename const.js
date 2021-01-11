@@ -16,7 +16,7 @@ if(env === 'dev'){
   mp3FilePath = '/root/nginx/upload/book/mp3'
   dbHost = '59.110.220.84'
   dbUser = 'root'
-  dbPwd = 'root'
+  dbPwd = '123456'
 }
 //nginx服务器地址(存储了书籍图片,字体,主题,解析后的书籍数据)
 
